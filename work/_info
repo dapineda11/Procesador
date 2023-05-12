@@ -1,0 +1,1588 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\DANI\Documents\8-Universidad Octavo Semestre\Organisasao\FINAL DE ORGA\ProcessorFULL4KHD1linkMega
+Eac
+Z1 w1606679041
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx6 altera 11 dffeas_pack 0 22 Giz7C_dB_=WZS^1=3P8073
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx6 altera 28 altera_primitives_components 0 22 W]_:GkoiISnEn83KNb:3:2
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\DANI\Documents\8-Universidad Octavo Semestre\Organisasao\FINAL DE ORGA\ProcessorFULL4KHD1linkMega
+Z9 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AC.vhd
+Z10 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AC.vhd
+l0
+L7
+VBOF7_M`N_5R?:>P5<P`f`3
+Z11 OV;C;10.1d;51
+32
+Z12 !s108 1607050322.261000
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AC.vhd|
+Z14 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AC.vhd|
+Z15 o-work work -O0
+Z16 tExplicit 1
+!s100 0NZ0aGzJW5n@fnb=H3j?W1
+!i10b 1
+Aacarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 ac 0 22 BOF7_M`N_5R?:>P5<P`f`3
+l31
+L21
+V_Xg?7HMIjfSJDAl[`iTLK1
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 VJ`29gcfz=Kh0JZ1LGP?k3
+!i10b 1
+Ealu
+Z17 w1606678870
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z18 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ALU.vhd
+Z19 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ALU.vhd
+l0
+L7
+VcC9FS9FgD[?kUb>?URX3V0
+R11
+32
+Z20 !s108 1607050322.432000
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ALU.vhd|
+Z22 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ALU.vhd|
+R15
+R16
+!s100 RJ=z2A]BNJMEIE5;agK`g0
+!i10b 1
+Aaluarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 alu 0 22 cC9FS9FgD[?kUb>?URX3V0
+l263
+L24
+ViQKcoe[b8eVd:cS=51_000
+R11
+32
+R20
+R21
+R22
+R15
+R16
+!s100 mj0F8h`AVC6EISD_<zlJT0
+!i10b 1
+Ear
+Z23 w1606419780
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z24 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AR.vhd
+Z25 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AR.vhd
+l0
+L7
+VIL5Jkj[Ga`HhG38eM]CFB1
+R11
+32
+Z26 !s108 1607050322.601000
+Z27 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AR.vhd|
+Z28 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AR.vhd|
+R15
+R16
+!s100 VFUlXjN>]HWnFH^K;GfJ^3
+!i10b 1
+Aararch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 ar 0 22 IL5Jkj[Ga`HhG38eM]CFB1
+l32
+L22
+V_<FOah8TMI=[a<VolTdoS2
+R11
+32
+R26
+R27
+R28
+R15
+R16
+!s100 Ea5dL`lgEMF<cMaW28Nd>3
+!i10b 1
+Eboothasaurus_rex
+Z29 w1606678741
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z30 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Boothasaurus_Rex.vhd
+Z31 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Boothasaurus_Rex.vhd
+l0
+L8
+V762OR>@ffW9L^N`==7;W?1
+R11
+32
+Z32 !s108 1607050322.764000
+Z33 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Boothasaurus_Rex.vhd|
+Z34 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Boothasaurus_Rex.vhd|
+R15
+R16
+!s100 Y0^Z<R:R]=gCLI7LnT6X81
+!i10b 1
+Aboothasaurus_rexarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 16 boothasaurus_rex 0 22 762OR>@ffW9L^N`==7;W?1
+l142
+L24
+VK]Ffc`Xgm=AK5U>SfX`h]2
+R11
+32
+R32
+R33
+R34
+R15
+R16
+!s100 WN[O1GGlLdelHDP^k3moC3
+!i10b 1
+Eca_2
+Z35 w1606677622
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z36 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2.vhd
+Z37 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2.vhd
+l0
+L6
+V3Kz8;APWeECI0JYQVA`N13
+R11
+32
+Z38 !s108 1607050322.993000
+Z39 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2.vhd|
+Z40 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2.vhd|
+R15
+R16
+!s100 kMS_Y;BDbXbcPi0IH[eT_0
+!i10b 1
+Aca_2arch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 4 ca_2 0 22 3Kz8;APWeECI0JYQVA`N13
+l18
+L13
+VfRfV77`;>67iND[mnGdJ42
+R11
+32
+R38
+R39
+R40
+R15
+R16
+!s100 6T_adSFRjm>Q8B@HIn^:H3
+!i10b 1
+Eca_2_boothsaurus
+Z41 w1606678471
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z42 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2_Boothsaurus.vhd
+Z43 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2_Boothsaurus.vhd
+l0
+L6
+VI`XB2XKaReJ_CPGLA]B?k2
+R11
+32
+Z44 !s108 1607050323.245000
+Z45 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2_Boothsaurus.vhd|
+Z46 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2_Boothsaurus.vhd|
+R15
+R16
+!s100 EEiAH`cOGll8m@`AVfjlK1
+!i10b 1
+Aca_2_boothsaurusarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 16 ca_2_boothsaurus 0 22 I`XB2XKaReJ_CPGLA]B?k2
+l18
+L13
+V8^a4lIo_Wm`fmnYjlZSon3
+R11
+32
+R44
+R45
+R46
+R15
+R16
+!s100 70QcB@OT7^bUfn4Tj__TG3
+!i10b 1
+Econtador
+Z47 w1606679523
+Z48 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z49 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R6
+R7
+R8
+Z50 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/contador.vhd
+Z51 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/contador.vhd
+l0
+L5
+V<QGmW7>XEYJ@9RILV2Sa=1
+R11
+32
+Z52 !s108 1607050323.473000
+Z53 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/contador.vhd|
+Z54 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/contador.vhd|
+R15
+R16
+!s100 TO?B6R4z0cG5gBZRAJN`k0
+!i10b 1
+Abehavioral
+R48
+R49
+R6
+R7
+DEx4 work 8 contador 0 22 <QGmW7>XEYJ@9RILV2Sa=1
+l18
+L14
+VCT1_hQA_OZg?Z6<Wg??SA0
+R11
+32
+R52
+R53
+R54
+R15
+R16
+!s100 ^DFzd1nj`b:7Fz9DPEhP41
+!i10b 1
+Econtrol
+Z55 w1606675999
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z56 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/control.vhd
+Z57 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/control.vhd
+l0
+L7
+VDhDaWDk45YK=J7m^lm^jX1
+R11
+32
+Z58 !s108 1607050323.659000
+Z59 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/control.vhd|
+Z60 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/control.vhd|
+R15
+R16
+!s100 _HQRanjm1E^7hHA`C13:Z3
+!i10b 1
+Acontrolarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 control 0 22 DhDaWDk45YK=J7m^lm^jX1
+l48
+L37
+VUbJ@_UL_T@[fJ441^Fk7L2
+R11
+32
+R58
+R59
+R60
+R15
+R16
+!s100 Z>8SPWm:A43@:Z7KPP27S1
+!i10b 1
+Econtrol_boothsaurus
+Z61 w1606678314
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z62 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Control_Boothsaurus.vhd
+Z63 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Control_Boothsaurus.vhd
+l0
+L7
+V5BVzOiQdnn3ddX0M3V1d93
+R11
+32
+Z64 !s108 1607050323.817000
+Z65 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Control_Boothsaurus.vhd|
+Z66 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Control_Boothsaurus.vhd|
+R15
+R16
+!s100 8Vzi1DzozbkMnzjCL]QJZ0
+!i10b 1
+Acontrol_boothsaurusarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 19 control_boothsaurus 0 22 5BVzOiQdnn3ddX0M3V1d93
+l45
+L34
+V39N@UeBGNR_Ce?efJ`OzW3
+R11
+32
+R64
+R65
+R66
+R15
+R16
+!s100 a_HVkO0N?A57:O=Tc[VVi0
+!i10b 1
+Ecorretaje
+Z67 w1606423327
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z68 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/corretaje.vhd
+Z69 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/corretaje.vhd
+l0
+L6
+V_9nHTaXYz]j6`ei7XH@=M0
+R11
+32
+Z70 !s108 1607050323.973000
+Z71 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/corretaje.vhd|
+Z72 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/corretaje.vhd|
+R15
+R16
+!s100 H?kjCm^=^Jl]V:BX3f0Z:2
+!i10b 1
+Acorretajearch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 corretaje 0 22 _9nHTaXYz]j6`ei7XH@=M0
+l29
+L19
+V:bEzGT69GM;]aA]K7obHk0
+R11
+32
+R70
+R71
+R72
+R15
+R16
+!s100 3fI_AX=6Y>WgHE>Qin5<f2
+!i10b 1
+Edesplazamiento_rotacion
+R55
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z73 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/desplazamiento_rotacion.vhd
+Z74 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/desplazamiento_rotacion.vhd
+l0
+L8
+Vc:A`2Q?9DY?2b1LMC`0h33
+R11
+32
+Z75 !s108 1607050324.127000
+Z76 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/desplazamiento_rotacion.vhd|
+Z77 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/desplazamiento_rotacion.vhd|
+R15
+R16
+!s100 dYK:CD4290>l:QzoB?[g[3
+!i10b 1
+Adesplazamiento_rotacionarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 23 desplazamiento_rotacion 0 22 c:A`2Q?9DY?2b1LMC`0h33
+l24
+L19
+VzU5k3bL@P;X;m]<9VR4Y;3
+R11
+32
+R75
+R76
+R77
+R15
+R16
+!s100 AiZ31RLg[2?`VmS00_MnN2
+!i10b 1
+Edireccion_interrupcion
+Z78 w1606964191
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z79 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Direccion_Interrupcion.vhd
+Z80 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Direccion_Interrupcion.vhd
+l0
+L7
+V;LYIbn`:VjWFVXM0E9;cz3
+R11
+32
+Z81 !s108 1607050324.298000
+Z82 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Direccion_Interrupcion.vhd|
+Z83 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Direccion_Interrupcion.vhd|
+R15
+R16
+!s100 ZX5PYeV^_mB7^=]AG8W?L3
+!i10b 1
+Adireccion_interrupcionarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 22 direccion_interrupcion 0 22 ;LYIbn`:VjWFVXM0E9;cz3
+l27
+L17
+Vh3E_Q<Iej:GFYN_4CThmd0
+R11
+32
+R81
+R82
+R83
+R15
+R16
+!s100 =zedOJN]M?FB<<=g6nbT21
+!i10b 1
+Edr
+Z84 w1606678839
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z85 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/DR.vhd
+Z86 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/DR.vhd
+l0
+L7
+ViNJCF>o=g[BA30K5_5FM[0
+R11
+32
+Z87 !s108 1607050324.491000
+Z88 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/DR.vhd|
+Z89 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/DR.vhd|
+R15
+R16
+!s100 5DhhTIPLiSU0cPJHW[=oA2
+!i10b 1
+Adrarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 dr 0 22 iNJCF>o=g[BA30K5_5FM[0
+l40
+L30
+V8e`5_D[og`mgOeh8VIeco2
+R11
+32
+R87
+R88
+R89
+R15
+R16
+!s100 bB8=2?_SnP]mD1810J?>P1
+!i10b 1
+Eflagselector
+Z90 w1606676000
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z91 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/FlagSelector.vhd
+Z92 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/FlagSelector.vhd
+l0
+L7
+VR>D@2M?=TizdN^3KzEIFD3
+R11
+32
+Z93 !s108 1607050324.670000
+Z94 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/FlagSelector.vhd|
+Z95 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/FlagSelector.vhd|
+R15
+R16
+!s100 iiWnj_32I33ILlh<Kc8M[2
+!i10b 1
+Aflagselectorarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 12 flagselector 0 22 R>D@2M?=TizdN^3KzEIFD3
+l40
+L29
+V6D?R<URWhVkQF`0UDEK^c2
+R11
+32
+R93
+R94
+R95
+R15
+R16
+!s100 6czK@T;z>jAWG6[5@60<b2
+!i10b 1
+Eir
+Z96 w1606413166
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z97 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/IR.vhd
+Z98 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/IR.vhd
+l0
+L7
+VJM;U@JA^_KT1`a285kISb1
+R11
+32
+Z99 !s108 1607050324.828000
+Z100 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/IR.vhd|
+Z101 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/IR.vhd|
+R15
+R16
+!s100 h>^3`D@YV1V18h1:A0eo73
+!i10b 1
+Airarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 ir 0 22 JM;U@JA^_KT1`a285kISb1
+l33
+L23
+VCoh;Ie=hR0<c]_>zP?lB91
+R11
+32
+R99
+R100
+R101
+R15
+R16
+!s100 5N?IX6Z>0@ReNjfoih1@@3
+!i10b 1
+Emux
+Z102 w1606424740
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z103 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/mux.vhd
+Z104 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/mux.vhd
+l0
+L7
+V9zY<2T_ZAO15h0M=05E]j0
+R11
+32
+Z105 !s108 1607050324.991000
+Z106 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/mux.vhd|
+Z107 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/mux.vhd|
+R15
+R16
+!s100 ZBlKoi@FD[eGJoE`Y9c<50
+!i10b 1
+Amuxarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 mux 0 22 9zY<2T_ZAO15h0M=05E]j0
+l27
+L22
+V0ziMT1Odj]@z@T=9S9^8k1
+R11
+32
+R105
+R106
+R107
+R15
+R16
+!s100 9:G0MKi8;m071JX<Pej=b1
+!i10b 1
+Enumeroa
+Z108 w1606678715
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z109 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numeroa.vhd
+Z110 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numeroa.vhd
+l0
+L8
+VkVPb?gGom0zZeTm4E]DkM1
+R11
+32
+Z111 !s108 1607050325.151000
+Z112 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numeroa.vhd|
+Z113 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numeroa.vhd|
+R15
+R16
+!s100 ;Ac;6^RbgSo:kSY>B<<`;3
+!i10b 1
+Anumeroaarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 numeroa 0 22 kVPb?gGom0zZeTm4E]DkM1
+l34
+L24
+VO]gP7?]K]jU0=D92K9:hP2
+R11
+32
+R111
+R112
+R113
+R15
+R16
+!s100 dJE4:8TH=KMV8jBXjf?cl3
+!i10b 1
+Enumerob
+Z114 w1606678990
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z115 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numerob.vhd
+Z116 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numerob.vhd
+l0
+L7
+VbHF`SdPoiC<WOk0XEhlO[1
+R11
+32
+Z117 !s108 1607050325.325000
+Z118 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numerob.vhd|
+Z119 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numerob.vhd|
+R15
+R16
+!s100 SOJlz]LEQn`W9hZF]6ZjH1
+!i10b 1
+Anumerobarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 numerob 0 22 bHF`SdPoiC<WOk0XEhlO[1
+l32
+L22
+Vmm^P8g[^;RV;[:QVe:8Gn3
+R11
+32
+R117
+R118
+R119
+R15
+R16
+!s100 P`=B2`4Qj0ejXG[>;BW3I3
+!i10b 1
+Eoperaciones
+Z120 w1606419491
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z121 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operaciones.vhd
+Z122 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operaciones.vhd
+l0
+L7
+V9f4b<eW14X99Pa:^7Yi5A2
+R11
+32
+Z123 !s108 1607050325.494000
+Z124 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operaciones.vhd|
+Z125 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operaciones.vhd|
+R15
+R16
+!s100 fQ62Za:LYd_nEKV22ZQKB1
+!i10b 1
+Aoperacionesarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 11 operaciones 0 22 9f4b<eW14X99Pa:^7Yi5A2
+l33
+L23
+VXnSYAFhSWnPZDU;NQm3LJ1
+R11
+32
+R123
+R124
+R125
+R15
+R16
+!s100 ]W3aiSI_U0Nf]WR=k=YcF0
+!i10b 1
+Eoperacioneslogicas
+Z126 w1606676001
+R6
+R7
+R8
+Z127 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operacioneslogicas.vhd
+Z128 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operacioneslogicas.vhd
+l0
+L4
+VidUle:4^SczaR@@0?j8Lc2
+R11
+32
+Z129 !s108 1607050325.653000
+Z130 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operacioneslogicas.vhd|
+Z131 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operacioneslogicas.vhd|
+R15
+R16
+!s100 H?8l=ifdWN>R?[NCi1ATQ1
+!i10b 1
+Agatelevel
+R6
+R7
+DEx4 work 18 operacioneslogicas 0 22 idUle:4^SczaR@@0?j8Lc2
+l18
+L14
+V]a6=z^3O<?QVddMz_>1CL0
+R11
+32
+R129
+R130
+R131
+R15
+R16
+!s100 Vejh;e__1;a^Xob?[8Dln1
+!i10b 1
+Epc
+Z132 w1606675997
+Z133 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R6
+R7
+R8
+Z134 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/PC.vhd
+Z135 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/PC.vhd
+l0
+L6
+VQJTPDziDFT7IG@55?F5[>0
+R11
+32
+Z136 !s108 1607050325.817000
+Z137 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/PC.vhd|
+Z138 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/PC.vhd|
+R15
+R16
+!s100 nnl>^0Cn=IeLRf?3[<cNW0
+!i10b 1
+Artl
+R133
+R6
+R7
+DEx4 work 2 pc 0 22 QJTPDziDFT7IG@55?F5[>0
+l27
+L18
+VJ:_U[BSaT6J2?VnV8D;?m3
+R11
+32
+R136
+R137
+R138
+R15
+R16
+!s100 lcX9lc0[Q3E1SW<MD2L8R3
+!i10b 1
+Eprocessorfull4khd1linkmega
+Z139 w1606679021
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z140 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ProcessorFULL4KHD1linkMega.vhd
+Z141 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ProcessorFULL4KHD1linkMega.vhd
+l0
+L7
+V7;XB62bil^li2zUBk]XQg0
+R11
+32
+Z142 !s108 1607050325.971000
+Z143 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ProcessorFULL4KHD1linkMega.vhd|
+Z144 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ProcessorFULL4KHD1linkMega.vhd|
+R15
+R16
+!s100 ELZVoHXmBP@cboYEa9;7O1
+!i10b 1
+Aprocessorfull4khd1linkmegaarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 26 processorfull4khd1linkmega 0 22 7;XB62bil^li2zUBk]XQg0
+l212
+L26
+V_jGD?5:LH]DRhZO3o`@>`0
+R11
+32
+R142
+R143
+R144
+R15
+R16
+!s100 EnbaeXJoU[eSDK7U;mHY:0
+!i10b 1
+Eregistro_ca_2
+Z145 w1606678187
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z146 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_CA_2.vhd
+Z147 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_CA_2.vhd
+l0
+L7
+Vl`g4U[f>F;R66AI]^:40E2
+R11
+32
+Z148 !s108 1607050326.137000
+Z149 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_CA_2.vhd|
+Z150 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_CA_2.vhd|
+R15
+R16
+!s100 LYm7Li^5Uk72DBHB:NCMa1
+!i10b 1
+Aregistro_ca_2arch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 registro_ca_2 0 22 l`g4U[f>F;R66AI]^:40E2
+l29
+L19
+V0`eK3`SGI<b3=6WiPW4HF0
+R11
+32
+R148
+R149
+R150
+R15
+R16
+!s100 daOGkof1gjzPaDoT>]I]22
+!i10b 1
+Eregistro_numb
+Z151 w1606678422
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z152 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_NumB.vhd
+Z153 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_NumB.vhd
+l0
+L7
+VbBUk_4K^=NL<CJPAHimaP1
+R11
+32
+Z154 !s108 1607050326.310000
+Z155 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_NumB.vhd|
+Z156 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_NumB.vhd|
+R15
+R16
+!s100 gVR_;1dV1?1`l:@=cKh1E3
+!i10b 1
+Aregistro_numbarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 registro_numb 0 22 bBUk_4K^=NL<CJPAHimaP1
+l29
+L19
+V5kfMYMhUnc`n;Z;JM5APE1
+R11
+32
+R154
+R155
+R156
+R15
+R16
+!s100 @;OJUD41BlDDGdbmCG_oA1
+!i10b 1
+Eregop
+Z157 w1606679477
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z158 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regop.vhd
+Z159 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regop.vhd
+l0
+L9
+VENe4Uic^=Zd<C4V?]5Cel1
+R11
+32
+Z160 !s108 1607050326.470000
+Z161 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regop.vhd|
+Z162 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regop.vhd|
+R15
+R16
+!s100 WFEQ?Iabmgnd`_S55>fhk2
+!i10b 1
+Aregoparch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 regop 0 22 ENe4Uic^=Zd<C4V?]5Cel1
+l35
+L24
+VIEXB8V6Y8ZlZ`V4T<1URF0
+R11
+32
+R160
+R161
+R162
+R15
+R16
+!s100 fa_jRJ`3AH?<UGz0KJC1z3
+!i10b 1
+Eregresp
+R157
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z163 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regresp.vhd
+Z164 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regresp.vhd
+l0
+L8
+VAX2HQQaYXX_O^8jBBKIaN1
+R11
+32
+Z165 !s108 1607050326.628000
+Z166 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regresp.vhd|
+Z167 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regresp.vhd|
+R15
+R16
+!s100 H>]7HIOMUbKj8c1E:dLF81
+!i10b 1
+Aregresparch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 regresp 0 22 AX2HQQaYXX_O^8jBBKIaN1
+l32
+L21
+V5;>598fYEfB<TQh1cRdb_2
+R11
+32
+R165
+R166
+R167
+R15
+R16
+!s100 _2zSSjggLQI@<<@Oj>P>h2
+!i10b 1
+Eresultado
+R126
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z168 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/resultado.vhd
+Z169 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/resultado.vhd
+l0
+L7
+Vo]^a:d^4HPcSHDlSgVdTk1
+R11
+32
+Z170 !s108 1607050326.807000
+Z171 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/resultado.vhd|
+Z172 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/resultado.vhd|
+R15
+R16
+!s100 7]RgUDi`gTQ1g^`fO1Ffo0
+!i10b 1
+Aresultadoarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 resultado 0 22 o]^a:d^4HPcSHDlSgVdTk1
+l30
+L20
+Vz6QOaa[59KDQa1j`41KH=1
+R11
+32
+R170
+R171
+R172
+R15
+R16
+!s100 cbHBbiEh4L77i0i;`==<81
+!i10b 1
+Eresultadocero
+Z173 w1606424369
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z174 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ResultadoCero.vhd
+Z175 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ResultadoCero.vhd
+l0
+L8
+VcIQzjZeaWi6U8Tk7k^L`X3
+R11
+32
+Z176 !s108 1607050326.965000
+Z177 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ResultadoCero.vhd|
+Z178 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ResultadoCero.vhd|
+R15
+R16
+!s100 J:GK=MX1R5C78R0ZO@=Y11
+!i10b 1
+Aresultadoceroarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 resultadocero 0 22 cIQzjZeaWi6U8Tk7k^L`X3
+l19
+L17
+VOLiig5QcFiRI<m0W1XZ7S1
+R11
+32
+R176
+R177
+R178
+R15
+R16
+!s100 Q;o<]z?Q2RF`;FbJz?AiW2
+!i10b 1
+Erom
+Z179 w1605119313
+Z180 DPx9 altera_mf 20 altera_mf_components 0 22 dN>@>Mze:JEj3f_7zNO2S2
+R6
+R7
+R8
+Z181 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd
+Z182 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd
+l0
+L42
+VFGP_5F6UeacTX`4nH5a533
+R11
+32
+Z183 !s108 1607050327.140000
+Z184 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd|
+Z185 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd|
+R15
+R16
+!s100 AGH>100`[HQdF@ORiT?Ye2
+!i10b 1
+Asyn
+R180
+R6
+R7
+DEx4 work 3 rom 0 22 FGP_5F6UeacTX`4nH5a533
+l57
+L53
+VH0jXeY7OclKP4JUNZdVPG2
+R11
+32
+R183
+R184
+R185
+R15
+R16
+!s100 QjXDhO]EEfgD<VI:NL=hC2
+!i10b 1
+Erwm
+Z186 w1605186811
+R180
+R6
+R7
+R8
+Z187 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd
+Z188 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd
+l0
+L42
+VSP;m7P[9T`[U0b60]MUQ:2
+R11
+32
+Z189 !s108 1607050327.324000
+Z190 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd|
+Z191 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd|
+R15
+R16
+!s100 AzL@hOW=5NPlCCZ6fXhVI1
+!i10b 1
+Asyn
+R180
+R6
+R7
+DEx4 work 3 rwm 0 22 SP;m7P[9T`[U0b60]MUQ:2
+l59
+L55
+VdSgOlDWDI2QY2VizE[YD53
+R11
+32
+R189
+R190
+R191
+R15
+R16
+!s100 4cF5Oh8d1;^ka83LR5bTl1
+!i10b 1
+Esietesegmelo
+Z192 w1606676069
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z193 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SieteSegMelo.vhd
+Z194 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SieteSegMelo.vhd
+l0
+L7
+VF484WMJRBzDK?9?<04iOS1
+R11
+32
+Z195 !s108 1607050327.497000
+Z196 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SieteSegMelo.vhd|
+Z197 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SieteSegMelo.vhd|
+R15
+R16
+!s100 [^mA>1g`729aEibb:I2Y_1
+!i10b 1
+Asietesegmeloarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 12 sietesegmelo 0 22 F484WMJRBzDK?9?<04iOS1
+l28
+L18
+V<JoOJ5IM`2BTc`VdMeS]`2
+R11
+32
+R195
+R196
+R197
+R15
+R16
+!s100 AhlM=LKcM7UkV:iKd0bNZ3
+!i10b 1
+Esp
+Z198 w1606413242
+R133
+R6
+R7
+R8
+Z199 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SP.vhd
+Z200 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SP.vhd
+l0
+L5
+VfCRLZcaJ`:4ll:B5a2TLj1
+R11
+32
+Z201 !s108 1607050327.653000
+Z202 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SP.vhd|
+Z203 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SP.vhd|
+R15
+R16
+!s100 26h]5JdcW<Cf<73R=QVTf3
+!i10b 1
+Asparch
+R133
+R6
+R7
+DEx4 work 2 sp 0 22 fCRLZcaJ`:4ll:B5a2TLj1
+l27
+L15
+VC@ge:4J<;A2D_bJaji07^2
+R11
+32
+R201
+R202
+R203
+R15
+R16
+!s100 LjeUMYmh3KE51igdcYZgn3
+!i10b 1
+Esr
+Z204 w1606413241
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z205 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SR.vhd
+Z206 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SR.vhd
+l0
+L7
+V97ZzJWGZzboN;2a>W>0=e2
+R11
+32
+Z207 !s108 1607050327.805000
+Z208 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SR.vhd|
+Z209 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SR.vhd|
+R15
+R16
+!s100 MZj@j44<jR;d?@MB]di4B1
+!i10b 1
+Asrarch
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 2 sr 0 22 97ZzJWGZzboN;2a>W>0=e2
+l31
+L21
+VmGgJ8_5HUYHVGGQ0ZLM0X0
+R11
+32
+R207
+R208
+R209
+R15
+R16
+!s100 ToeM5?Ae>6cJgKF2JA?`S0
+!i10b 1
+Esuma_booth
+Z210 w1606678542
+R6
+R7
+R8
+Z211 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Suma_Booth.vhd
+Z212 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Suma_Booth.vhd
+l0
+L4
+V9[KWn@R[;5;N^A8jzce>a2
+R11
+32
+Z213 !s108 1607050327.962000
+Z214 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Suma_Booth.vhd|
+Z215 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Suma_Booth.vhd|
+R15
+R16
+!s100 ]cUO>lGKVI_P3@f0T<TJG2
+!i10b 1
+Astructure
+R6
+R7
+DEx4 work 10 suma_booth 0 22 9[KWn@R[;5;N^A8jzce>a2
+l19
+L15
+Vd21OP_3ObDbWF?aI[2diN1
+R11
+32
+R213
+R214
+R215
+R15
+R16
+!s100 HAkTAhzkWLNAcJiB2e]fk1
+!i10b 1
+Esumador
+Z216 w1606678902
+R6
+R7
+R8
+Z217 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/sumador.vhd
+Z218 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/sumador.vhd
+l0
+L4
+V5^`89n^LLBTHI_`imUL660
+R11
+32
+Z219 !s108 1607050328.112000
+Z220 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/sumador.vhd|
+Z221 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/sumador.vhd|
+R15
+R16
+!s100 MgmGa^1aCki;cNH_<4CA^0
+!i10b 1
+Astructure
+R6
+R7
+DEx4 work 7 sumador 0 22 5^`89n^LLBTHI_`imUL660
+l29
+L25
+VL_UF]MD5KoSZZEhklbnOY2
+R11
+32
+R219
+R220
+R221
+R15
+R16
+!s100 DNG[1@em]I7NnWTJ3e[AR2
+!i10b 1
+Esystem_32
+Z222 w1606676148
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z223 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32.vhd
+Z224 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32.vhd
+l0
+L8
+V>54:KJ7SgGVB<loR<G^dd2
+R11
+32
+Z225 !s108 1607050328.305000
+Z226 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32.vhd|
+Z227 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32.vhd|
+R15
+R16
+!s100 =MEY=H5]h4A_c=:<UVghK2
+!i10b 1
+Asystem_32arch
+R2
+R3
+R4
+R5
+R6
+R7
+Z228 DEx4 work 9 system_32 0 22 >54:KJ7SgGVB<loR<G^dd2
+l85
+L21
+VE6]B5:9?;9DXJ1hnE^>I33
+R11
+32
+R225
+R226
+R227
+R15
+R16
+!s100 9KBU6dNN7<a[=<Vh=AC<h2
+!i10b 1
+Esystem_32_tb
+Z229 w1607009203
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z230 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32_tb.vhd
+Z231 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32_tb.vhd
+l0
+L6
+VEacYV5NoN_W9O<ma<jAbM1
+R11
+32
+Z232 !s108 1607050328.481000
+Z233 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32_tb.vhd|
+Z234 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32_tb.vhd|
+R15
+R16
+!s100 aPB638gjdh_YNh9_APc1L3
+!i10b 1
+Atestbench
+R228
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 12 system_32_tb 0 22 EacYV5NoN_W9O<ma<jAbM1
+l21
+L10
+V[^Z2gFfR62_W<cQC]LJR:0
+!s100 KGLn?2CXP4UV5izb?0QkK0
+R11
+32
+R232
+R233
+R234
+R15
+R16
+!i10b 1
+Eunidaddecontrol
+Z235 w1607043317
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z236 8C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/UnidaddeControl.vhd
+Z237 FC:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/UnidaddeControl.vhd
+l0
+L6
+V9^NX<9:]ITLO?5PiI0]9A0
+!s100 D<b1dL:M8i>@aDH1_RBIA3
+R11
+32
+!i10b 1
+Z238 !s108 1607050328.651000
+Z239 !s90 -reportprogress|30|-work|work|C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/UnidaddeControl.vhd|
+Z240 !s107 C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/UnidaddeControl.vhd|
+R15
+R16
+Aunidaddecontrolarch
+R2
+R3
+R4
+R5
+R6
+R7
+Z241 DEx4 work 15 unidaddecontrol 0 22 9^NX<9:]ITLO?5PiI0]9A0
+l46
+L34
+Z242 Vg_H1EWi>WJ6DSEAXiRfa[2
+Z243 !s100 G83V`662d@B11]Vg3E_W^0
+R11
+32
+!i10b 1
+R238
+R239
+R240
+R15
+R16

@@ -1,0 +1,42 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+library ALTERA;
+use ALTERA.altera_primitives_components.all;
+
+ENTITY CA_2_Boothsaurus IS
+	PORT	(	NumeroB_Registro_NumB	:	IN		STD_LOGIC_VECTOR(7 DOWNTO 0);
+				COMPLEMENTOA2_Registro_CA_2:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0)
+				
+				);
+END ENTITY CA_2_Boothsaurus;
+
+ARCHITECTURE CA_2_BoothsaurusArch OF CA_2_Boothsaurus IS
+SIGNAL 	compA1 	: STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL 	Cout 		: STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL 	sum 		: STD_LOGIC_VECTOR(7 DOWNTO 0);
+CONSTANT uno 		: STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000001";
+BEGIN
+	
+	compA1	<= NOT NumeroB_Registro_NumB;
+	
+	sum(0)	<=	((NOT compA1(0)) AND (uno(0))) OR ((compA1(0)) AND (NOT uno(0)));
+	Cout(0)	<=	compA1(0) AND uno(0);
+	sum(1)	<=	((NOT compA1(1)) AND (NOT uno(1)) AND (Cout(0))) OR ((NOT compA1(1)) AND (uno(1)) AND (NOT Cout(0))) OR ((compA1(1)) AND (NOT uno(1)) AND (NOT Cout(0))) OR ((compA1(1)) AND (uno(1)) AND (Cout(0)));
+	Cout(1)	<=	(compA1(1) AND uno(1)) OR (compA1(1) AND (Cout(0))) OR (Cout(0) AND uno(1));
+	sum(2)	<=	((NOT compA1(2)) AND (NOT uno(2)) AND (Cout(1))) OR ((NOT compA1(2)) AND (uno(2)) AND (NOT Cout(1)))   OR ((compA1(2)) AND (NOT uno(2)) AND (NOT Cout(1))) OR ((compA1(2)) AND (uno(2)) AND (Cout(1)));
+	Cout(2)	<=	(compA1(2) AND uno(2)) OR (compA1(2) AND (Cout(1))) OR (Cout(1) AND uno(2));
+	sum(3)	<=	((NOT compA1(3)) AND (NOT uno(3)) AND (Cout(2))) OR ((NOT compA1(3)) AND (uno(3)) AND (NOT Cout(2)))   OR ((compA1(3)) AND (NOT uno(3)) AND (NOT Cout(2)))   OR ((compA1(3)) AND (uno(3)) AND (Cout(2)));
+	Cout(3)	<=	(compA1(3) AND uno(3)) OR (compA1(3) AND (Cout(2))) OR (Cout(2) AND uno(3));
+	sum(4)	<=	((NOT compA1(4)) AND (NOT uno(4)) AND (Cout(3))) OR ((NOT compA1(4)) AND (uno(4)) AND (NOT Cout(3)))   OR ((compA1(4)) AND (NOT uno(4)) AND (NOT Cout(3)))   OR ((compA1(4)) AND (uno(4)) AND (Cout(3)));
+	Cout(4)	<=	(compA1(4) AND uno(4)) OR (compA1(4) AND (Cout(3))) OR (Cout(3) AND uno(4));
+	sum(5)	<=	((NOT compA1(5)) AND (NOT uno(5)) AND (Cout(4))) OR ((NOT compA1(5)) AND (uno(5)) AND (NOT Cout(4)))  OR ((compA1(5)) AND (NOT uno(5)) AND (NOT Cout(4)))  OR ((compA1(5)) AND (uno(5)) AND (Cout(4)));
+	Cout(5)	<=	(compA1(5) AND uno(5)) OR (compA1(5) AND (Cout(4))) OR (Cout(4) AND uno(5));
+	sum(6)	<=	((NOT compA1(6)) AND (NOT uno(6)) AND (Cout(5))) OR ((NOT compA1(6)) AND (uno(6)) AND (NOT Cout(5)))  OR ((compA1(6)) AND (NOT uno(6)) AND (NOT Cout(5)))  OR ((compA1(6)) AND (uno(6)) AND (Cout(5)));
+	Cout(6)	<=	(compA1(6) AND uno(6)) OR (compA1(6) AND (Cout(5))) OR (Cout(5) AND uno(6));
+	sum(7)	<=	((NOT compA1(7)) AND (NOT uno(7)) AND (Cout(6)))  OR ((NOT compA1(7)) AND (uno(7)) AND (NOT Cout(6)))  OR ((compA1(7)) AND (NOT uno(7)) AND (NOT Cout(6)))  OR ((compA1(7)) AND (uno(7)) AND (Cout(6)));
+	Cout(7)	<=	(compA1(7) AND uno(7)) OR (compA1(7) AND (Cout(6))) OR (Cout(6) AND uno(7));
+
+	
+	COMPLEMENTOA2_Registro_CA_2 <= sum;	
+	
+END ARCHITECTURE CA_2_BoothsaurusArch;

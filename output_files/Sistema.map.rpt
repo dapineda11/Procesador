@@ -1,0 +1,944 @@
+Analysis & Synthesis report for Sistema
+Thu Dec 03 23:55:33 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for ROM:ROMM|altsyncram:altsyncram_component|altsyncram_llr3:auto_generated
+ 15. Source assignments for RWM:RWMM|altsyncram:altsyncram_component|altsyncram_jpr3:auto_generated
+ 16. Parameter Settings for User Entity Instance: ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|PC:PCC
+ 17. Parameter Settings for User Entity Instance: ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SP:SPP
+ 18. Parameter Settings for User Entity Instance: ROM:ROMM|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: RWM:RWMM|altsyncram:altsyncram_component
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Operaciones:Operacioness"
+ 22. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Resultado:resultadoo"
+ 23. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Suma_Booth:Suma_Boothm"
+ 24. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|contador:Contadorr"
+ 25. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|control:Controll"
+ 26. Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec 03 23:55:33 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Sistema                                         ;
+; Top-level Entity Name              ; System_32                                       ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 847                                             ;
+;     Total combinational functions  ; 718                                             ;
+;     Dedicated logic registers      ; 308                                             ;
+; Total registers                    ; 308                                             ;
+; Total pins                         ; 20                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 32,768                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; System_32          ; Sistema            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                            ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                              ; Library ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; contador.vhd                     ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/contador.vhd                   ;         ;
+; ROM.vhd                          ; yes             ; User Wizard-Generated File             ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd                        ;         ;
+; RWM.vhd                          ; yes             ; User Wizard-Generated File             ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd                        ;         ;
+; regresp.vhd                      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regresp.vhd                    ;         ;
+; IR.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/IR.vhd                         ;         ;
+; SR.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SR.vhd                         ;         ;
+; SP.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SP.vhd                         ;         ;
+; operaciones.vhd                  ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operaciones.vhd                ;         ;
+; AR.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AR.vhd                         ;         ;
+; Direccion_Interrupcion.vhd       ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Direccion_Interrupcion.vhd     ;         ;
+; corretaje.vhd                    ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/corretaje.vhd                  ;         ;
+; ResultadoCero.vhd                ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ResultadoCero.vhd              ;         ;
+; mux.vhd                          ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/mux.vhd                        ;         ;
+; UnidaddeControl.vhd              ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/UnidaddeControl.vhd            ;         ;
+; PC.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/PC.vhd                         ;         ;
+; desplazamiento_rotacion.vhd      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/desplazamiento_rotacion.vhd    ;         ;
+; control.vhd                      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/control.vhd                    ;         ;
+; FlagSelector.vhd                 ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/FlagSelector.vhd               ;         ;
+; resultado.vhd                    ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/resultado.vhd                  ;         ;
+; operacioneslogicas.vhd           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/operacioneslogicas.vhd         ;         ;
+; SieteSegMelo.vhd                 ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/SieteSegMelo.vhd               ;         ;
+; System_32.vhd                    ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/System_32.vhd                  ;         ;
+; CA_2.vhd                         ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2.vhd                       ;         ;
+; Registro_CA_2.vhd                ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_CA_2.vhd              ;         ;
+; Control_Boothsaurus.vhd          ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Control_Boothsaurus.vhd        ;         ;
+; Registro_NumB.vhd                ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Registro_NumB.vhd              ;         ;
+; CA_2_Boothsaurus.vhd             ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/CA_2_Boothsaurus.vhd           ;         ;
+; Suma_Booth.vhd                   ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Suma_Booth.vhd                 ;         ;
+; numeroa.vhd                      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numeroa.vhd                    ;         ;
+; Boothasaurus_Rex.vhd             ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/Boothasaurus_Rex.vhd           ;         ;
+; regop.vhd                        ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/regop.vhd                      ;         ;
+; DR.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/DR.vhd                         ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ALU.vhd                        ;         ;
+; sumador.vhd                      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/sumador.vhd                    ;         ;
+; numerob.vhd                      ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/numerob.vhd                    ;         ;
+; ProcessorFULL4KHD1linkMega.vhd   ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ProcessorFULL4KHD1linkMega.vhd ;         ;
+; AC.vhd                           ; yes             ; User VHDL File                         ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/AC.vhd                         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/altsyncram.tdf                                                           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/lpm_mux.inc                                                              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/lpm_decode.inc                                                           ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/aglobal130.inc                                                           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/altrom.inc                                                               ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/altram.inc                                                               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; e:/program files/altera/13.0osp1/quartus/libraries/megafunctions/altdpram.inc                                                             ;         ;
+; db/altsyncram_llr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/db/altsyncram_llr3.tdf         ;         ;
+; rom.hex                          ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/rom.hex                        ;         ;
+; db/altsyncram_jpr3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/db/altsyncram_jpr3.tdf         ;         ;
+; rwm.hex                          ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/rwm.hex                        ;         ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 847         ;
+;                                             ;             ;
+; Total combinational functions               ; 718         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 527         ;
+;     -- 3 input functions                    ; 109         ;
+;     -- <=2 input functions                  ; 82          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 700         ;
+;     -- arithmetic mode                      ; 18          ;
+;                                             ;             ;
+; Total registers                             ; 308         ;
+;     -- Dedicated logic registers            ; 308         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 20          ;
+; Total memory bits                           ; 32768       ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; Reloj~input ;
+; Maximum fan-out                             ; 337         ;
+; Total fan-out                               ; 4198        ;
+; Average fan-out                             ; 3.82        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                             ;
++-------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                    ; Library Name ;
++-------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |System_32                                                  ; 718 (0)           ; 308 (0)      ; 32768       ; 0            ; 0       ; 0         ; 20   ; 0            ; |System_32                                                                                                                                             ; work         ;
+;    |ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar| ; 717 (0)           ; 291 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar                                                                                      ; work         ;
+;       |AC:ACC|                                              ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|AC:ACC                                                                               ; work         ;
+;       |AR:ARR|                                              ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|AR:ARR                                                                               ; work         ;
+;       |DR:DRR|                                              ; 43 (43)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|DR:DRR                                                                               ; work         ;
+;       |Direccion_Interrupcion:direccion_Interrupcionn|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn                                       ; work         ;
+;       |IR:IRR|                                              ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|IR:IRR                                                                               ; work         ;
+;       |PC:PCC|                                              ; 25 (25)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|PC:PCC                                                                               ; work         ;
+;       |SP:SPP|                                              ; 13 (13)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SP:SPP                                                                               ; work         ;
+;       |SR:SRR|                                              ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SR:SRR                                                                               ; work         ;
+;       |UnidaddeControl:UnidaddeControlU|                    ; 72 (72)           ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|UnidaddeControl:UnidaddeControlU                                                     ; work         ;
+;       |alu:ALUU|                                            ; 507 (0)           ; 149 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU                                                                             ; work         ;
+;          |Boothasaurus_Rex:Boothasaurus_Rexr|               ; 94 (0)            ; 58 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr                                          ; work         ;
+;             |Control_Boothsaurus:Control_Boothsaurusm|      ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm ; work         ;
+;             |Registro_CA_2:Registro_CA_22|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Registro_CA_2:Registro_CA_22             ; work         ;
+;             |Registro_NumB:Registro_NumBm|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Registro_NumB:Registro_NumBm             ; work         ;
+;             |Suma_Booth:Suma_Boothm|                        ; 44 (44)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Suma_Booth:Suma_Boothm                   ; work         ;
+;             |contador:Contadorr|                            ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|contador:Contadorr                       ; work         ;
+;             |regop:regopp|                                  ; 37 (37)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regop:regopp                             ; work         ;
+;             |regresp:REGRESPP|                              ; 0 (0)             ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP                         ; work         ;
+;          |CA_2:CA_22|                                       ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|CA_2:CA_22                                                                  ; work         ;
+;          |Corretaje:Corretajey|                             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Corretaje:Corretajey                                                        ; work         ;
+;          |FlagSelector:FlagSelectors|                       ; 25 (25)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|FlagSelector:FlagSelectors                                                  ; work         ;
+;          |Mux:MUXX|                                         ; 106 (106)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Mux:MUXX                                                                    ; work         ;
+;          |NumeroA:NumeroAA|                                 ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|NumeroA:NumeroAA                                                            ; work         ;
+;          |NumeroB:NumeroBB|                                 ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|NumeroB:NumeroBB                                                            ; work         ;
+;          |Operaciones:Operacioness|                         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Operaciones:Operacioness                                                    ; work         ;
+;          |Resultado:resultadoo|                             ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Resultado:resultadoo                                                        ; work         ;
+;          |ResultadoCero:ResultadoCeroo|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|ResultadoCero:ResultadoCeroo                                                ; work         ;
+;          |Sumador:Sumadorr|                                 ; 227 (227)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Sumador:Sumadorr                                                            ; work         ;
+;          |control:Controll|                                 ; 28 (28)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|control:Controll                                                            ; work         ;
+;          |operacioneslogicas:Operacioneslogicass|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|operacioneslogicas:Operacioneslogicass                                      ; work         ;
+;    |ROM:ROMM|                                               ; 1 (0)             ; 1 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ROM:ROMM                                                                                                                                    ; work         ;
+;       |altsyncram:altsyncram_component|                     ; 1 (0)             ; 1 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ROM:ROMM|altsyncram:altsyncram_component                                                                                                    ; work         ;
+;          |altsyncram_llr3:auto_generated|                   ; 1 (1)             ; 1 (1)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|ROM:ROMM|altsyncram:altsyncram_component|altsyncram_llr3:auto_generated                                                                     ; work         ;
+;    |RWM:RWMM|                                               ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|RWM:RWMM                                                                                                                                    ; work         ;
+;       |altsyncram:altsyncram_component|                     ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|RWM:RWMM|altsyncram:altsyncram_component                                                                                                    ; work         ;
+;          |altsyncram_jpr3:auto_generated|                   ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|RWM:RWMM|altsyncram:altsyncram_component|altsyncram_jpr3:auto_generated                                                                     ; work         ;
+;    |SieteSegMelo:SieteSegMeloa|                             ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |System_32|SieteSegMelo:SieteSegMeloa                                                                                                                  ; work         ;
++-------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                      ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+; Name                                                                               ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF     ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+; ROM:ROMM|altsyncram:altsyncram_component|altsyncram_llr3:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 1024         ; 16           ; --           ; --           ; 16384 ; ROM.hex ;
+; RWM:RWMM|altsyncram:altsyncram_component|altsyncram_jpr3:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 1024         ; 16           ; --           ; --           ; 16384 ; RWM.hex ;
++------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                    ;
++--------+--------------+---------+--------------+--------------+---------------------+--------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File                                                                                                    ;
++--------+--------------+---------+--------------+--------------+---------------------+--------------------------------------------------------------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |System_32|ROM:ROMM ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/ROM.vhd ;
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |System_32|RWM:RWMM ; C:/Users/DANI/Documents/8-Universidad Octavo Semestre/Organisasao/FINAL DE ORGA/ProcessorFULL4KHD1linkMega/RWM.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                            ; Reason for Removal                                                                                                                   ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF1                ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF3                ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF6                ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF8                ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF9                ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF10               ; Stuck at GND due to stuck port data_in                                                                                               ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF4                ; Merged with ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF2                ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF5                ; Merged with ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF2                ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF7                ; Merged with ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn|FF2                ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP|FF15 ; Merged with ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP|FF14 ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP|FF16 ; Merged with ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP|FF14 ;
+; Total Number of Removed Registers = 11                                                                                   ;                                                                                                                                      ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 308   ;
+; Number of registers using Synchronous Clear  ; 11    ;
+; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Asynchronous Clear ; 269   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 211   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                              ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                               ; Fan out ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|UnidaddeControl:UnidaddeControlU|FF1                                                     ; 2       ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|control:Controll|FF1                                                            ; 1       ;
+; ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF1 ; 1       ;
+; Total number of inverted registers = 3                                                                                                          ;         ;
++-------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|PC:PCC|temp[0] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |System_32|ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SP:SPP|temp[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Source assignments for ROM:ROMM|altsyncram:altsyncram_component|altsyncram_llr3:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------+
+; Assignment                      ; Value              ; From ; To                               ;
++---------------------------------+--------------------+------+----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
++---------------------------------+--------------------+------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Source assignments for RWM:RWMM|altsyncram:altsyncram_component|altsyncram_jpr3:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------+
+; Assignment                      ; Value              ; From ; To                               ;
++---------------------------------+--------------------+------+----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
++---------------------------------+--------------------+------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|PC:PCC ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SP:SPP ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                                    ;
+; valor          ; 1     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:ROMM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------+
+; Parameter Name                     ; Value                ; Type                      ;
++------------------------------------+----------------------+---------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                   ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE            ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                   ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                   ;
+; WIDTH_A                            ; 16                   ; Signed Integer            ;
+; WIDTHAD_A                          ; 10                   ; Signed Integer            ;
+; NUMWORDS_A                         ; 1024                 ; Signed Integer            ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                   ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                   ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                   ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                   ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                   ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                   ;
+; WIDTH_B                            ; 1                    ; Signed Integer            ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer            ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                   ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                   ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                   ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                   ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                   ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                   ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                   ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                   ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer            ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                   ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
+; INIT_FILE                          ; ROM.hex              ; Untyped                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                   ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                   ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                   ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                   ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer            ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                   ;
+; CBXI_PARAMETER                     ; altsyncram_llr3      ; Untyped                   ;
++------------------------------------+----------------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RWM:RWMM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------+
+; Parameter Name                     ; Value                ; Type                      ;
++------------------------------------+----------------------+---------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                   ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE            ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                   ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                   ;
+; WIDTH_A                            ; 16                   ; Signed Integer            ;
+; WIDTHAD_A                          ; 10                   ; Signed Integer            ;
+; NUMWORDS_A                         ; 1024                 ; Signed Integer            ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                   ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                   ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                   ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                   ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                   ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                   ;
+; WIDTH_B                            ; 1                    ; Signed Integer            ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer            ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                   ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                   ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                   ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                   ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                   ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                   ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                   ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                   ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer            ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                   ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
+; INIT_FILE                          ; RWM.hex              ; Untyped                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                   ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                   ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                   ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                   ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer            ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                   ;
+; CBXI_PARAMETER                     ; altsyncram_jpr3      ; Untyped                   ;
++------------------------------------+----------------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                     ;
++-------------------------------------------+------------------------------------------+
+; Name                                      ; Value                                    ;
++-------------------------------------------+------------------------------------------+
+; Number of entity instances                ; 2                                        ;
+; Entity Instance                           ; ROM:ROMM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                      ;
+;     -- WIDTH_A                            ; 16                                       ;
+;     -- NUMWORDS_A                         ; 1024                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                   ;
+;     -- WIDTH_B                            ; 1                                        ;
+;     -- NUMWORDS_B                         ; 0                                        ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                   ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                             ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                     ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                ;
+; Entity Instance                           ; RWM:RWMM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                              ;
+;     -- WIDTH_A                            ; 16                                       ;
+;     -- NUMWORDS_A                         ; 1024                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                   ;
+;     -- WIDTH_B                            ; 1                                        ;
+;     -- NUMWORDS_B                         ; 0                                        ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                   ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                             ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                     ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                ;
++-------------------------------------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Operaciones:Operacioness"          ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; operaciones_sumador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Resultado:resultadoo"                  ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; resultado_resultadocero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Suma_Booth:Suma_Boothm" ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                    ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; resp ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|contador:Contadorr" ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; cnt  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                    ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|control:Controll"               ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; control_contador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar"                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; ac_dr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Dec 03 23:55:19 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off System_32 -c Sistema
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
+    Info (12022): Found design unit 1: contador-Behavioral
+    Info (12023): Found entity 1: contador
+Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
+    Info (12022): Found design unit 1: rom-SYN
+    Info (12023): Found entity 1: ROM
+Info (12021): Found 2 design units, including 1 entities, in source file rwm.vhd
+    Info (12022): Found design unit 1: rwm-SYN
+    Info (12023): Found entity 1: RWM
+Info (12021): Found 2 design units, including 1 entities, in source file regresp.vhd
+    Info (12022): Found design unit 1: regresp-regrespArch
+    Info (12023): Found entity 1: regresp
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: IR-IRArch
+    Info (12023): Found entity 1: IR
+Info (12021): Found 2 design units, including 1 entities, in source file sr.vhd
+    Info (12022): Found design unit 1: SR-SRARch
+    Info (12023): Found entity 1: SR
+Info (12021): Found 2 design units, including 1 entities, in source file sp.vhd
+    Info (12022): Found design unit 1: SP-SPArch
+    Info (12023): Found entity 1: SP
+Info (12021): Found 2 design units, including 1 entities, in source file operaciones.vhd
+    Info (12022): Found design unit 1: Operaciones-OperacionesArch
+    Info (12023): Found entity 1: Operaciones
+Info (12021): Found 2 design units, including 1 entities, in source file ar.vhd
+    Info (12022): Found design unit 1: AR-ARArch
+    Info (12023): Found entity 1: AR
+Info (12021): Found 2 design units, including 1 entities, in source file direccion_interrupcion.vhd
+    Info (12022): Found design unit 1: Direccion_Interrupcion-Direccion_InterrupcionArch
+    Info (12023): Found entity 1: Direccion_Interrupcion
+Info (12021): Found 2 design units, including 1 entities, in source file corretaje.vhd
+    Info (12022): Found design unit 1: Corretaje-CorretajeArch
+    Info (12023): Found entity 1: Corretaje
+Info (12021): Found 2 design units, including 1 entities, in source file resultadocero.vhd
+    Info (12022): Found design unit 1: ResultadoCero-ResultadoCeroArch
+    Info (12023): Found entity 1: ResultadoCero
+Warning (12090): Entity "Mux" obtained from "mux.vhd" instead of from Quartus II megafunction library
+Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
+    Info (12022): Found design unit 1: Mux-MuxArch
+    Info (12023): Found entity 1: Mux
+Info (12021): Found 2 design units, including 1 entities, in source file unidaddecontrol.vhd
+    Info (12022): Found design unit 1: UnidaddeControl-UnidaddeControlArch
+    Info (12023): Found entity 1: UnidaddeControl
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-rtl
+    Info (12023): Found entity 1: PC
+Info (12021): Found 2 design units, including 1 entities, in source file desplazamiento_rotacion.vhd
+    Info (12022): Found design unit 1: Desplazamiento_Rotacion-Desplazamiento_RotacionArch
+    Info (12023): Found entity 1: Desplazamiento_Rotacion
+Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
+    Info (12022): Found design unit 1: Control-ControlArch
+    Info (12023): Found entity 1: control
+Info (12021): Found 2 design units, including 1 entities, in source file flagselector.vhd
+    Info (12022): Found design unit 1: FlagSelector-FlagSelectorArch
+    Info (12023): Found entity 1: FlagSelector
+Info (12021): Found 2 design units, including 1 entities, in source file resultado.vhd
+    Info (12022): Found design unit 1: Resultado-ResultadoArch
+    Info (12023): Found entity 1: Resultado
+Info (12021): Found 2 design units, including 1 entities, in source file operacioneslogicas.vhd
+    Info (12022): Found design unit 1: operacioneslogicas-gateLevel
+    Info (12023): Found entity 1: operacioneslogicas
+Info (12021): Found 2 design units, including 1 entities, in source file sietesegmelo.vhd
+    Info (12022): Found design unit 1: SieteSegMelo-SieteSegMeloArch
+    Info (12023): Found entity 1: SieteSegMelo
+Info (12021): Found 2 design units, including 1 entities, in source file system_32.vhd
+    Info (12022): Found design unit 1: System_32-System_32Arch
+    Info (12023): Found entity 1: System_32
+Info (12021): Found 2 design units, including 1 entities, in source file system_32_tb.vhd
+    Info (12022): Found design unit 1: System_32_tb-testbench
+    Info (12023): Found entity 1: System_32_tb
+Info (12021): Found 2 design units, including 1 entities, in source file ca_2.vhd
+    Info (12022): Found design unit 1: CA_2-CA_2Arch
+    Info (12023): Found entity 1: CA_2
+Info (12021): Found 2 design units, including 1 entities, in source file registro_ca_2.vhd
+    Info (12022): Found design unit 1: Registro_CA_2-Registro_CA_2Arch
+    Info (12023): Found entity 1: Registro_CA_2
+Info (12021): Found 2 design units, including 1 entities, in source file control_boothsaurus.vhd
+    Info (12022): Found design unit 1: Control_Boothsaurus-Control_BoothsaurusArch
+    Info (12023): Found entity 1: Control_Boothsaurus
+Info (12021): Found 2 design units, including 1 entities, in source file registro_numb.vhd
+    Info (12022): Found design unit 1: Registro_NumB-Registro_NumBArch
+    Info (12023): Found entity 1: Registro_NumB
+Info (12021): Found 2 design units, including 1 entities, in source file ca_2_boothsaurus.vhd
+    Info (12022): Found design unit 1: CA_2_Boothsaurus-CA_2_BoothsaurusArch
+    Info (12023): Found entity 1: CA_2_Boothsaurus
+Info (12021): Found 2 design units, including 1 entities, in source file suma_booth.vhd
+    Info (12022): Found design unit 1: Suma_Booth-structure
+    Info (12023): Found entity 1: Suma_Booth
+Info (12021): Found 2 design units, including 1 entities, in source file numeroa.vhd
+    Info (12022): Found design unit 1: NumeroA-NumeroAArch
+    Info (12023): Found entity 1: NumeroA
+Info (12021): Found 2 design units, including 1 entities, in source file boothasaurus_rex.vhd
+    Info (12022): Found design unit 1: Boothasaurus_Rex-Boothasaurus_RexArch
+    Info (12023): Found entity 1: Boothasaurus_Rex
+Info (12021): Found 2 design units, including 1 entities, in source file regop.vhd
+    Info (12022): Found design unit 1: regop-regopArch
+    Info (12023): Found entity 1: regop
+Info (12021): Found 2 design units, including 1 entities, in source file dr.vhd
+    Info (12022): Found design unit 1: DR-DRArch
+    Info (12023): Found entity 1: DR
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: alu-aluArch
+    Info (12023): Found entity 1: alu
+Info (12021): Found 2 design units, including 1 entities, in source file sumador.vhd
+    Info (12022): Found design unit 1: Sumador-structure
+    Info (12023): Found entity 1: Sumador
+Info (12021): Found 2 design units, including 1 entities, in source file numerob.vhd
+    Info (12022): Found design unit 1: NumeroB-NumeroBArch
+    Info (12023): Found entity 1: NumeroB
+Info (12021): Found 2 design units, including 1 entities, in source file processorfull4khd1linkmega.vhd
+    Info (12022): Found design unit 1: ProcessorFULL4KHD1linkMega-ProcessorFULL4KHD1linkMegaArch
+    Info (12023): Found entity 1: ProcessorFULL4KHD1linkMega
+Info (12021): Found 2 design units, including 1 entities, in source file ac.vhd
+    Info (12022): Found design unit 1: AC-ACArch
+    Info (12023): Found entity 1: AC
+Info (12127): Elaborating entity "System_32" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at System_32.vhd(84): object "AC_DR" assigned a value but never read
+Info (12128): Elaborating entity "ProcessorFULL4KHD1linkMega" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar"
+Info (12128): Elaborating entity "UnidaddeControl" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|UnidaddeControl:UnidaddeControlU"
+Info (12128): Elaborating entity "alu" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU"
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(223): object "Control_Contador" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(241): object "Resultado_ResultadoCero" assigned a value but never read
+Info (12128): Elaborating entity "control" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|control:Controll"
+Warning (10541): VHDL Signal Declaration warning at control.vhd(16): used implicit default value for signal "Control_Contador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "Boothasaurus_Rex" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr"
+Info (12128): Elaborating entity "Control_Boothsaurus" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm"
+Info (12128): Elaborating entity "contador" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|contador:Contadorr"
+Warning (10541): VHDL Signal Declaration warning at contador.vhd(9): used implicit default value for signal "cnt" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "Suma_Booth" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Suma_Booth:Suma_Boothm"
+Warning (10541): VHDL Signal Declaration warning at Suma_Booth.vhd(10): used implicit default value for signal "resp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "CA_2_Boothsaurus" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|CA_2_Boothsaurus:CA_2_Boothsaurusm"
+Info (12128): Elaborating entity "Registro_CA_2" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Registro_CA_2:Registro_CA_22"
+Info (12128): Elaborating entity "Registro_NumB" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Registro_NumB:Registro_NumBm"
+Info (12128): Elaborating entity "regop" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regop:regopp"
+Info (12128): Elaborating entity "regresp" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|regresp:REGRESPP"
+Info (12128): Elaborating entity "NumeroB" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|NumeroB:NumeroBB"
+Info (12128): Elaborating entity "NumeroA" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|NumeroA:NumeroAA"
+Info (12128): Elaborating entity "CA_2" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|CA_2:CA_22"
+Info (12128): Elaborating entity "Sumador" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Sumador:Sumadorr"
+Info (12128): Elaborating entity "Resultado" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Resultado:resultadoo"
+Info (12128): Elaborating entity "ResultadoCero" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|ResultadoCero:ResultadoCeroo"
+Info (12128): Elaborating entity "operacioneslogicas" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|operacioneslogicas:Operacioneslogicass"
+Info (12128): Elaborating entity "FlagSelector" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|FlagSelector:FlagSelectors"
+Warning (10873): Using initial value X (don't care) for net "FlagSelector_Sumador[2]" at FlagSelector.vhd(19)
+Warning (10873): Using initial value X (don't care) for net "FlagSelector_Sumador[0]" at FlagSelector.vhd(19)
+Info (12128): Elaborating entity "Desplazamiento_Rotacion" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Desplazamiento_Rotacion:Desplazamiento_Rotacionn"
+Info (12128): Elaborating entity "Operaciones" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Operaciones:Operacioness"
+Warning (10541): VHDL Signal Declaration warning at operaciones.vhd(17): used implicit default value for signal "operaciones_sumador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "Mux" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Mux:MUXX"
+Info (12128): Elaborating entity "Corretaje" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Corretaje:Corretajey"
+Info (12128): Elaborating entity "AC" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|AC:ACC"
+Info (12128): Elaborating entity "IR" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|IR:IRR"
+Info (12128): Elaborating entity "PC" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|PC:PCC"
+Info (12128): Elaborating entity "SP" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SP:SPP"
+Info (12128): Elaborating entity "Direccion_Interrupcion" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|Direccion_Interrupcion:direccion_Interrupcionn"
+Info (12128): Elaborating entity "SR" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|SR:SRR"
+Info (12128): Elaborating entity "AR" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|AR:ARR"
+Info (12128): Elaborating entity "DR" for hierarchy "ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|DR:DRR"
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROMM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM:ROMM|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "ROM:ROMM|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "ROM:ROMM|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "ROM.hex"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_llr3.tdf
+    Info (12023): Found entity 1: altsyncram_llr3
+Info (12128): Elaborating entity "altsyncram_llr3" for hierarchy "ROM:ROMM|altsyncram:altsyncram_component|altsyncram_llr3:auto_generated"
+Info (12128): Elaborating entity "RWM" for hierarchy "RWM:RWMM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RWM:RWMM|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "RWM:RWMM|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "RWM:RWMM|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "RWM.hex"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jpr3.tdf
+    Info (12023): Found entity 1: altsyncram_jpr3
+Info (12128): Elaborating entity "altsyncram_jpr3" for hierarchy "RWM:RWMM|altsyncram:altsyncram_component|altsyncram_jpr3:auto_generated"
+Info (12128): Elaborating entity "SieteSegMelo" for hierarchy "SieteSegMelo:SieteSegMeloa"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 924 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 872 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Thu Dec 03 23:55:33 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
+
+

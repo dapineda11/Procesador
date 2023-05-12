@@ -1,0 +1,63 @@
+library IEEE; 
+use IEEE.std_logic_1164.all; 
+library ALTERA;
+use ALTERA.altera_primitives_components.all;
+
+ 
+entity Mux is
+port(
+		
+		
+		Sumador_Mux 						: in std_logic_vector (15 downto 0);
+		Desplazamiento_Rotacion_Mux 						: in std_logic_vector (15 downto 0);
+		operacioneslogicas_Mux 						: in std_logic_vector (15 downto 0);
+		Mux_Resultado 						: out std_logic_vector (15 downto 0);
+		
+		Operacion		             	       : in std_logic_vector(3 downto 0);
+		Mux_ResultadoCero		: out std_logic_vector (15 downto 0);
+		Respuesta_Mux           	    : in std_logic_vector(15 downto 0)
+	);
+end entity Mux;     
+
+architecture MuxArch of Mux is
+
+signal CMux : std_logic_vector (9 downto 0);
+signal D: std_logic_vector (15 downto 0);
+
+begin 
+
+CMux(0)<=  operacion(0)and not operacion(1)and not operacion(2)and not operacion(3);
+CMux(1)<= not operacion(0)and  operacion(1)and not operacion(2)and not operacion(3);
+CMux(2)<=operacion(0)and operacion(1)and not operacion(2)and not operacion(3);
+CMux(3)<= not operacion(0)and not operacion(1)and  operacion(2)and not operacion(3);
+CMux(4)<=not operacion(0)and operacion(1)and operacion(2)and not operacion(3);
+CMux(5)<=operacion(0)and operacion(1)and operacion(2)and not operacion(3);
+CMux(6)<= not operacion(0)and not operacion(1)and not operacion(2)and operacion(3);
+CMux(7)<=operacion(0)and not operacion(1)and not operacion(2)and operacion(3);
+CMux(8)<=not operacion(0)and operacion(1)and not operacion(2)and operacion(3);
+CMux(9)<= operacion(0)and  not operacion(1)and operacion(2)and not operacion(3);
+--hacemos la seleccion
+D(0)<= ((( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(0)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(0) ) or  ((cMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(0)) or  ( CMux(9)  and Respuesta_Mux(0) ) ); 
+D(1)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(1)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(1) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(1)) or  ( CMux(9)  and Respuesta_Mux(1) );
+D(2)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(2)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(2) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(2)) or  ( CMux(9)  and Respuesta_Mux(2) );
+D(3)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(3)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(3) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(3))or  ( CMux(9)  and Respuesta_Mux(3) );
+D(4)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(4)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(4) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(4))or  ( CMux(9)  and Respuesta_Mux(4) );
+D(5)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(5)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(5) )or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(5))or  ( CMux(9)  and Respuesta_Mux(5) ); 
+D(6)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(6)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(6) ) or ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(6))or  ( CMux(9)  and Respuesta_Mux(6) );
+D(7)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(7)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(7) )or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(7))or  ( CMux(9)  and Respuesta_Mux(7) );
+D(8)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(8)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(8) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(8))or  ( CMux(9)  and Respuesta_Mux(8) ); 
+D(9)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(9)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(9) )or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(9))or  ( CMux(9)  and Respuesta_Mux(9) );
+D(10)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(10)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(10) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(10))or  ( CMux(9)  and Respuesta_Mux(10) );
+D(11)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(11)) or( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(11) )or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(11))or  ( CMux(9)  and Respuesta_Mux(11) );
+D(12)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(12)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(12) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(12))or  ( CMux(9)  and Respuesta_Mux(12) );
+D(13)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(13)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(13) )or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(13))or  ( CMux(9)  and Respuesta_Mux(13) );
+D(14)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(14)) or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(14) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(14))or  ( CMux(9)  and Respuesta_Mux(14) );
+D(15)<=(( CMux(0) or CMux(1) or CMux(2) or CMux(3)) and Sumador_Mux(15))or ( ( CMux(7) or CMux(8)) and Desplazamiento_Rotacion_Mux(15) ) or  ((CMux(4) or CMux(5) OR CMux(6))and operacioneslogicas_Mux(15))or  ( CMux(9)  and Respuesta_Mux(15) );
+
+
+
+Mux_Resultado <= D;
+
+Mux_ResultadoCero <= D;
+
+End MuxArch;

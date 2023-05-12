@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Reloj'
+Slack : -5.579
+TNS   : -614.467
+
+Type  : Slow 1200mV 85C Model Setup 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : -0.024
+TNS   : -0.024
+
+Type  : Slow 1200mV 85C Model Hold 'Reloj'
+Slack : -0.137
+TNS   : -0.543
+
+Type  : Slow 1200mV 85C Model Hold 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Reloj'
+Slack : -1.132
+TNS   : -85.356
+
+Type  : Slow 1200mV 85C Model Removal 'Reloj'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -403.656
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'Reloj'
+Slack : -4.916
+TNS   : -522.631
+
+Type  : Slow 1200mV 0C Model Setup 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Reloj'
+Slack : -0.104
+TNS   : -0.237
+
+Type  : Slow 1200mV 0C Model Hold 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Reloj'
+Slack : -0.897
+TNS   : -64.697
+
+Type  : Slow 1200mV 0C Model Removal 'Reloj'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -403.656
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'Reloj'
+Slack : -2.823
+TNS   : -223.651
+
+Type  : Fast 1200mV 0C Model Setup 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Reloj'
+Slack : -0.178
+TNS   : -1.387
+
+Type  : Fast 1200mV 0C Model Hold 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Reloj'
+Slack : -0.257
+TNS   : -8.558
+
+Type  : Fast 1200mV 0C Model Removal 'Reloj'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Reloj'
+Slack : -3.000
+TNS   : -374.418
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ProcessorFULL4KHD1linkMega:ProcessorFULL4KHD1linkMegar|alu:ALUU|Boothasaurus_Rex:Boothasaurus_Rexr|Control_Boothsaurus:Control_Boothsaurusm|FF6'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------
